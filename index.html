@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>calculator</title>
+</head>
+<body>
+  <h1>simple calculator</h1>
+  <div class="table">
+    <table>
+      <tr>
+        <td><button type="button" onclick="
+        res+='1';
+        ">1</button></td>
+        <td><button type="button" onclick="
+        res+='2';
+        ">2</button></td>
+        <td><button type="button" onclick="
+          res+='3';
+          ">3</button></td>
+        <td><button type="button" onclick="
+        arr[i]=res;
+        i+=1;
+        arr[i]='+';
+        res='';
+        i+=1;
+        ">+</button></td>
+      </tr>
+
+      <tr>
+        <td><button type="button" onclick="
+          res+='4';
+          ">4</button></td>
+        <td><button type="button" onclick="
+          res+='5';
+          ">5</button></td>
+        <td><button type="button" onclick="
+          res+='6';
+          ">6</button></td>
+        <td><button type="button" onclick="
+          arr[i]=res;
+          i+=1;
+          arr[i]='-';
+          res='';
+          i+=1;
+          ">-</button></td>
+      </tr>
+
+      <tr>
+        <td><button type="button" onclick="
+          res+='7';
+          ">7</button></td>
+        <td><button type="button" onclick="
+          res+='8';
+          ">8</button></td>
+        <td><button type="button" onclick="
+          res+='9';
+          ">9</button></td>
+        <td><button type="button" onclick="
+          arr[i]=res;
+          i+=1;
+          arr[i]='*';
+          res='';
+          i+=1;
+          ">*</button></td>
+      </tr>
+
+      <tr>
+        <td><button>clear</button></td>
+        <td><button type="button" onclick="
+          res+='0';
+          ">0</button></td>
+        <td><button>ac</button></td>
+        <td><button type="button" onclick="
+          arr[i]=res;
+          i+=1;
+          arr[i]='/';
+          res='';
+          i+=1;
+          ">/</button></td>
+      </tr>
+
+      <tr>
+        <td colspan="4"><button style="background-color: orange;" type="button" onclick="
+        arr[i]=res;
+          result(i);
+          i=0;
+          ">=</button></td>
+      </tr>
+    </table>
+  </div>
+
+
+<!-- to do list  -->
+
+
+  <h1>to do list</h1>
+  <input type="text" name="input" id="val" value="" onkeydown="checkenter(event);
+  ">
+  <input type="submit" value="addlist" onclick="addlist();">
+  <div class="displaytodo"></div>
+  
+  <script src="index.js"></script>
+
+</body>
+</html>

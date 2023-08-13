@@ -1,0 +1,21 @@
+button
+{
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+table
+{
+  border: 1px solid black;
+  width: 40%;
+  height: 300px;
+  border-collapse: collapse;
+}
+button:hover
+{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+
